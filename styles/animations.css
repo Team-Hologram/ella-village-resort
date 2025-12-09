@@ -1,0 +1,3 @@
+/* Simple animation helpers */
+.fade-up { transform: translateY(8px); opacity:0; transition: all .4s ease; }
+.fade-up.show { transform: translateY(0); opacity:1; }
