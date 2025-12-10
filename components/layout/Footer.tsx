@@ -16,7 +16,6 @@ export default function Footer() {
     legal: [
       { name: 'Privacy Policy', path: '/privacy' },
       { name: 'Terms & Conditions', path: '/terms' },
-      { name: 'Cancellation Policy', path: '/cancellation' },
     ],
   };
 
@@ -32,10 +31,11 @@ export default function Footer() {
           >
             <div className="flex items-center space-x-3 mb-4">
               <div className="w-12 h-12 bg-clay-600 rounded-full flex items-center justify-center">
-                <span className="text-2xl">🌾</span>
+                {/* <span className="text-2xl">🌾</span> */}
+                <img src='/images/logo/logo.png'/>
               </div>
               <h3 className="font-display text-xl font-bold">
-                Ella Village Retreat
+                Echo Home Relax
               </h3>
             </div>
             <p className="text-sand-300 text-sm leading-relaxed mb-4">
@@ -156,7 +156,7 @@ export default function Footer() {
         <div className="text-center text-sand-400 text-sm">
           <p>
             &copy; {new Date().getFullYear()} {SITE_CONFIG.name}. All rights
-            reserved. Crafted with 🌿 in Sri Lanka
+            reserved. Crafted with <a style={{fontSize: 16, fontWeight: "bold"}} href='https://www.wideech.com' target='_blank'>Wideech</a>
           </p>
         </div>
       </div>

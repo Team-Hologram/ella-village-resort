@@ -86,11 +86,12 @@ export default function Header() {
               whileHover={{ scale: 1.05 }}
             >
               <div className="w-12 h-12 bg-clay-600 rounded-full flex items-center justify-center">
-                <span className="text-2xl">🌾</span>
+                {/* <span className="text-2xl">🌾</span> */}
+                <img src='/images/logo/logo.png'/>
               </div>
               <div>
                 <h1 className={`font-display text-xl font-bold transition-colors ${logoTextClasses}`}>
-                  Ella Village Retreat
+                  Echo Home Relax
                 </h1>
                 <p className={`text-xs transition-colors ${logoSubTextClasses}`}>
                   Authentic Village Experience

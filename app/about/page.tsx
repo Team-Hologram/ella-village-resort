@@ -51,7 +51,7 @@ export default function AboutPage() {
               </h2>
               <div className="w-24 h-1 bg-clay-600 mb-6"></div>
               <p className="text-lg text-earth-700 mb-6 leading-relaxed">
-                Ella Village Retreat was born from a deep love for Sri Lankan rural
+                Echo Home Relax was born from a deep love for Sri Lankan rural
                 heritage and a desire to share it with the world. Our property sits on
                 land that has been cultivated by the same family for four generations.
               </p>

@@ -384,7 +384,8 @@ export default function AccommodationPage() {
               animate={{ rotate: [0, 10, -10, 0] }}
               transition={{ duration: 3, repeat: Infinity }}
             >
-              <span className="text-6xl">🌾</span>
+              {/* <span className="text-6xl">🌾</span> */}
+              <img src='/images/logo/logo.png' height={150} width={150}/>
             </motion.div>
             <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
               Ready for an Authentic Village Experience?

@@ -1,12 +1,12 @@
 export const SITE_CONFIG = {
-  name: 'Ella Village Retreat',
+  name: 'Echo Home Relax',
   tagline: 'Experience Authentic Village Life in Ella',
   description:
     'Immerse yourself in traditional Sri Lankan village life surrounded by paddy fields, coconut groves, and ancient temples in the heart of Ella.',
-  url: 'https://ellavillageretreat.com',
-  email: 'hello@ellavillageretreat.com',
-  phone: '+94 77 123 4567',
-  whatsapp: '+94771234567',
+  url: 'https://echohomerelax.com',
+  email: 'hello@echohomerelax.com',
+  phone: '+94 77 251 7219',
+  whatsapp: '+94772517219',
   address: 'Ella Village Road, Ella 90900, Sri Lanka',
   coordinates: {
     lat: 6.8667,
