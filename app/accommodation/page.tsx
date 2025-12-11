@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import AnimatedSection from '@/components/shared/AnimatedSection';
 import Button from '@/components/shared/Button';
-import { Users, X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // Traditional Clay House data
 const room = {
