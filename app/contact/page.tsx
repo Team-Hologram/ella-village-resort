@@ -275,7 +275,7 @@ export default function ContactPage() {
               <AnimatedSection animation="fadeInUp" delay={0.6}>
                 <div className="bg-white rounded-3xl overflow-hidden shadow-xl">
                   <iframe
-                    src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.${SITE_CONFIG.coordinates.lat}!2d${SITE_CONFIG.coordinates.lng}!3d${SITE_CONFIG.coordinates.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTInMDAuMSJOIDgxwrAwMic0OC4xIkU!5e0!3m2!1sen!2slk!4v1234567890123!5m2!1sen!2slk`}
+                    src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.4945438841237!2d81.10659697451644!3d6.643387493351175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae415c5c9899483%3A0xec2f6ec1921218d0!2sJ4V5%2B9M3%2C%20Telulla!5e1!3m2!1sen!2slk!4v1765425784803!5m2!1sen!2slk`}
                     width="100%"
                     height="300"
                     style={{ border: 0 }}

@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import L from 'leaflet';
-import 'leaflet/dist/leaflet.css';
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import L from "leaflet";
+import "leaflet/dist/leaflet.css";
 
 interface Point {
   id: number;
@@ -19,29 +19,30 @@ interface InteractiveMapProps {
 // Custom marker icons
 const createCustomIcon = (type: string) => {
   const iconMap: { [key: string]: string } = {
-    waterfall: '💧',
-    temple: '🛕',
-    paddy: '🌾',
-    lake: '🏞️',
-    river: '🏊',
+    home: "📍",
+    waterfall: "💧",
+    temple: "🛕",
+    paddy: "🌾",
+    lake: "🏞️",
+    river: "🏊",
   };
 
   return L.divIcon({
-    html: `<div style="font-size: 30px;">${iconMap[type] || '📍'}</div>`,
-    className: 'custom-marker',
+    html: `<div style="font-size: 30px;">${iconMap[type] || "📍"}</div>`,
+    className: "custom-marker",
     iconSize: [40, 40],
     iconAnchor: [20, 40],
   });
 };
 
 export default function InteractiveMap({ points }: InteractiveMapProps) {
-  const center: [number, number] = [6.8667, 81.0467];
+  const center: [number, number] = [6.7320291188910595, 81.17117132536951];
 
   return (
     <MapContainer
       center={center}
-      zoom={13}
-      style={{ height: '100%', width: '100%' }}
+      zoom={12}
+      style={{ height: "100%", width: "100%" }}
       scrollWheelZoom={false}
     >
       <TileLayer
@@ -56,10 +57,16 @@ export default function InteractiveMap({ points }: InteractiveMapProps) {
         >
           <Popup>
             <div className="p-2">
-              <h3 className="font-display font-semibold text-lg mb-1">
-                {point.name}
+              <h3 style={{ whiteSpace: 'pre' }} className="font-display font-semibold text-lg mb-1">
+                {point.name+ "                     "}
               </h3>
-              <p className="text-sm text-gray-600">{point.description}</p>
+              <p className="text-sm text-gray-600">
+                <img
+                  src={point.description}
+                  alt={`Gallery image`}
+                  className="object-container"
+                />
+              </p>
             </div>
           </Popup>
         </Marker>

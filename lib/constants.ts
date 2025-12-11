@@ -2,15 +2,15 @@ export const SITE_CONFIG = {
   name: 'Echo Home Relax',
   tagline: 'Experience Authentic Village Life in Ella',
   description:
-    'Immerse yourself in traditional Sri Lankan village life surrounded by paddy fields, coconut groves, and ancient temples in the heart of Ella.',
+    'Immerse yourself in traditional Sri Lankan village life surrounded by paddy fields, coconut groves, and ancient temples in the heart of Ella-Wellawaya.',
   url: 'https://echohomerelax.com',
   email: 'hello@echohomerelax.com',
   phone: '+94 77 251 7219',
   whatsapp: '+94772517219',
-  address: 'Ella Village Road, Ella 90900, Sri Lanka',
+  address: 'Ella-Wellawaya Road, Wellawaya 91000, Sri Lanka',
   coordinates: {
-    lat: 6.8667,
-    lng: 81.0467,
+    lat: 6.6433840,
+    lng: 81.1091610,
   },
 };
 
@@ -130,39 +130,40 @@ export const TRADITIONAL_CLAY_HOUSE = {
 };
 
 export const EXPLORATION_POINTS = [
+  
   {
     id: 1,
-    name: 'Ravana Falls',
-    type: 'waterfall',
-    coordinates: { lat: 6.8234, lng: 81.0532 },
-    description: 'Majestic 25m waterfall surrounded by lush greenery',
+    name: "Yudhaganava Stupa\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0",
+    type: 'temple',
+    coordinates: { lat: 6.7754864462951145, lng: 81.23498427571167 },
+    description: '/images/explore/yudaganawa.jpg',
   },
   {
     id: 2,
-    name: 'Ancient Village Temple',
-    type: 'temple',
-    coordinates: { lat: 6.8712, lng: 81.0401 },
-    description: '300-year-old Buddhist temple with stunning murals',
+    name: 'Diyaluma Falls\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0',
+    type: 'waterfall',
+    coordinates: { lat: 6.733368063279525, lng: 81.03137867796386 },
+    description: '/images/explore/diyaluma.jpg',
   },
   {
     id: 3,
-    name: 'Sunrise Paddy Fields',
-    type: 'paddy',
-    coordinates: { lat: 6.8689, lng: 81.0489 },
-    description: 'Golden rice terraces perfect for morning walks',
+    name: 'Ellewala Waterfall\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0',
+    type: 'waterfall',
+    coordinates: { lat: 6.781680537528461, lng: 81.08577150842197 },
+    description: '/images/explore/ellewala.jpg',
   },
   {
     id: 4,
-    name: 'Crystal Lake',
-    type: 'lake',
-    coordinates: { lat: 6.8601, lng: 81.0523 },
-    description: 'Tranquil lake ideal for fishing and bird watching',
+    name: 'Buduruwagala Raja Maha Viharaya',
+    type: 'temple',
+    coordinates: { lat: 6.685771565107966, lng: 81.07965075704934 },
+    description: '/images/explore/buduruwagala.jpg',
   },
   {
     id: 5,
-    name: 'Village River Bath',
-    type: 'river',
-    coordinates: { lat: 6.8656, lng: 81.0445 },
-    description: 'Natural bathing spot used by locals for generations',
+    name: 'Maligawila Old Rajamaha Viharaya',
+    type: 'temple',
+    coordinates: { lat: 6.731626036323862, lng: 81.35389785707471 },
+    description: '/images/explore/maligawila.jpg',
   },
 ];

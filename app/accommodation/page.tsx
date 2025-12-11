@@ -24,7 +24,7 @@ const room = {
     'Handcrafted furniture',
     'Mosquito netting',
   ],
-  price: 80,
+  price: "Happy Money",
   features: [
     {
       title: 'Authentic Architecture',
@@ -200,15 +200,9 @@ export default function AccommodationPage() {
                   <div className="bg-white rounded-2xl p-8 shadow-xl sticky top-24">
                     <div className="text-center mb-6">
                       <div className="text-5xl font-bold text-clay-700 mb-2">
-                        ${room.price}
-                        <span className="text-lg font-normal text-earth-600">
-                          /night
-                        </span>
+                        {room.price}
                       </div>
-                      <div className="flex items-center justify-center gap-2 text-earth-600">
-                        <Users size={20} />
-                        <span>Up to {room.capacity} guests</span>
-                      </div>
+                      
                     </div>
 
                     <div className="border-t border-sand-200 pt-6 mb-6">

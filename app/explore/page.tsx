@@ -1,32 +1,34 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-import dynamic from 'next/dynamic';
-import { EXPLORATION_POINTS } from '@/lib/constants';
-import AnimatedSection from '@/components/shared/AnimatedSection';
+import { motion } from "framer-motion";
+import Image from "next/image";
+import dynamic from "next/dynamic";
+import { EXPLORATION_POINTS } from "@/lib/constants";
+import AnimatedSection from "@/components/shared/AnimatedSection";
 
 // Dynamically import map to avoid SSR issues
 const InteractiveMap = dynamic(
-  () => import('@/components/explore/InteractiveMap'),
+  () => import("@/components/explore/InteractiveMap"),
   { ssr: false }
 );
 
 export default function ExplorePage() {
   const typeIcons: { [key: string]: string } = {
-    waterfall: '💧',
-    temple: '🛕',
-    paddy: '🌾',
-    lake: '🏞️',
-    river: '🏊',
+    waterfall: "💧",
+    temple: "🛕",
+    paddy: "🌾",
+    lake: "🏞️",
+    river: "🏊",
+    home: "",
   };
 
   const typeColors: { [key: string]: string } = {
-    waterfall: 'bg-water-500',
-    temple: 'bg-clay-600',
-    paddy: 'bg-leaf-600',
-    lake: 'bg-water-600',
-    river: 'bg-water-400',
+    waterfall: "bg-water-500",
+    temple: "bg-clay-600",
+    paddy: "bg-leaf-600",
+    lake: "bg-water-600",
+    river: "bg-water-400",
+    home: "",
   };
 
   return (
@@ -88,7 +90,7 @@ export default function ExplorePage() {
               >
                 <motion.div
                   className="bg-sand-50 rounded-2xl p-6 paper-overlay"
-                  whileHover={{ y: -5, shadow: '0 10px 30px rgba(0,0,0,0.1)' }}
+                  whileHover={{ y: -5, shadow: "0 10px 30px rgba(0,0,0,0.1)" }}
                 >
                   <div className="flex items-start gap-4 mb-4">
                     <div
@@ -108,7 +110,13 @@ export default function ExplorePage() {
                     </div>
                   </div>
                   <p className="text-earth-700 leading-relaxed">
-                    {point.description}
+                    <Image
+                      src={point.description}
+                      height={100}
+                      width={400}
+                      alt={`Gallery image`}
+                      className="object-container"
+                    />
                   </p>
                 </motion.div>
               </AnimatedSection>
