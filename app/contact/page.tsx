@@ -8,6 +8,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import AnimatedSection from '@/components/shared/AnimatedSection';
 import Button from '@/components/shared/Button';
 
+const BOOKING_WHATSAPP_NUMBER = '94771137232'; // +94 77 113 7232 (digits only)
+
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: '',
@@ -19,19 +21,40 @@ export default function ContactPage() {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const buildWhatsappMessage = () => {
+    const lines = [
+      '📩 *New Booking Request*',
+      '',
+      `👤 Name: ${formData.name}`,
+      `📧 Email: ${formData.email}`,
+      `📞 Phone: ${formData.phone || '-'}`,
+      `📅 Check-in: ${formData.checkIn}`,
+      `📅 Check-out: ${formData.checkOut}`,
+      `👥 Guests: ${formData.guests}`,
+      '',
+      `📝 Special Requests: ${formData.message || '-'}`,
+    ];
+
+    return lines.join('\n');
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Handle form submission (integrate with your backend)
-    console.log('Form submitted:', formData);
+
+    const text = encodeURIComponent(buildWhatsappMessage());
+    const waUrl = `https://wa.me/${BOOKING_WHATSAPP_NUMBER}?text=${text}`;
+
+    // Open WhatsApp (mobile app / web)
+    window.open(waUrl, '_blank', 'noopener,noreferrer');
   };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
-    setFormData({
-      ...formData,
+    setFormData((prev) => ({
+      ...prev,
       [e.target.name]: e.target.value,
-    });
+    }));
   };
 
   return (
@@ -56,7 +79,7 @@ export default function ContactPage() {
               Get in Touch
             </h1>
             <p className="text-xl text-sand-100">
-              We'd love to host you at our village retreat
+              We&apos;d love to host you at our village retreat
             </p>
           </motion.div>
         </div>
@@ -72,6 +95,8 @@ export default function ContactPage() {
                 <h2 className="font-display text-3xl font-bold text-earth-900 mb-6">
                   Book Your Stay
                 </h2>
+
+                {/* ✅ Submit will open WhatsApp with filled details */}
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
@@ -174,17 +199,16 @@ export default function ContactPage() {
                       onChange={handleChange}
                       className="w-full px-4 py-3 rounded-lg border border-sand-300 focus:border-clay-600 focus:ring-2 focus:ring-clay-200 outline-none transition resize-none"
                       placeholder="Any special requirements or questions?"
-                    ></textarea>
+                    />
                   </div>
 
-                  <Button
-                    size="lg"
-                    className="w-full"
-                    onClick={() => handleSubmit}
-                  >
-                    <Send className="mr-2" size={20} />
-                    Send Booking Request
-                  </Button>
+                  {/* ✅ IMPORTANT: type="submit" (no onClick needed) */}
+                  {/* <button type="submit" className="w-full"> */}
+                    <Button size="lg" className="w-full">
+                      <Send className="mr-2" size={20} />
+                      Send Booking Request
+                    </Button>
+                  {/* </button> */}
                 </form>
               </div>
             </AnimatedSection>
@@ -282,7 +306,7 @@ export default function ContactPage() {
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                  ></iframe>
+                  />
                 </div>
               </AnimatedSection>
             </div>

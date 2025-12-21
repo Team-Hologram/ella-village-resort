@@ -39,7 +39,7 @@ export default function CTASection() {
           </h2>
 
           <p className="text-xl text-sand-100 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Escape to the tranquility of rural Ella. Experience authentic Sri
+            Escape to the tranquility of rural Ella-Wellawaya. Experience authentic Sri
             Lankan hospitality, timeless traditions, and the simple joys of
             village life.
           </p>

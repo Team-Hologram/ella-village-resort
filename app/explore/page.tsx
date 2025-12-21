@@ -50,7 +50,7 @@ export default function ExplorePage() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="font-display text-5xl md:text-7xl font-bold text-white mb-4">
-              Explore Ella
+              Explore Ella-Wellawaya
             </h1>
             <p className="text-xl text-sand-100 max-w-2xl mx-auto">
               Discover natural wonders and cultural treasures around our village

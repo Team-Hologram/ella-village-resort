@@ -45,7 +45,7 @@ export default function Hero() {
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
             Experience Authentic
             <br />
-            <span className="text-clay-300">Village Life in Ella</span>
+            <span className="text-clay-300">Village Life in Ella-Wellwaya</span>
           </h1>
 
           {/* Subheading */}

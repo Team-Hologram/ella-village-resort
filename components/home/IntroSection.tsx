@@ -32,7 +32,7 @@ export default function IntroSection() {
             <div className="w-24 h-1 bg-clay-600 mb-6"></div>
             
             <p className="text-lg text-earth-700 mb-6 leading-relaxed">
-              Nestled in the heart of Ella's countryside, our traditional village
+              Nestled in the heart of Ella-Wellawaya's countryside, our traditional village
               retreat offers an authentic glimpse into Sri Lankan rural life.
               Built with clay bricks, thatched roofs, and surrounded by swaying
               coconut palms and golden paddy fields.

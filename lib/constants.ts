@@ -1,12 +1,12 @@
 export const SITE_CONFIG = {
   name: 'Echo Home Relax',
-  tagline: 'Experience Authentic Village Life in Ella',
+  tagline: 'Experience Authentic Village Life in Ella-Wellawaya',
   description:
     'Immerse yourself in traditional Sri Lankan village life surrounded by paddy fields, coconut groves, and ancient temples in the heart of Ella-Wellawaya.',
   url: 'https://echohomerelax.com',
   email: 'hello@echohomerelax.com',
-  phone: '+94 77 251 7219',
-  whatsapp: '+94772517219',
+  phone: '+94 77 113 7232',
+  whatsapp: '+94771137232',
   address: 'Ella-Wellawaya Road, Wellawaya 91000, Sri Lanka',
   coordinates: {
     lat: 6.6433840,
