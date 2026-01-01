@@ -7,7 +7,7 @@ export const SITE_CONFIG = {
   email: 'hello@echohomerelax.com',
   phone: '+94 77 113 7232',
   whatsapp: '+94771137232',
-  address: 'Ella-Wellawaya Road, Wellawaya 91000, Sri Lanka',
+  address: 'Ella-Wellawaya, Weherayaaya kolani, Sri Lanka.',
   coordinates: {
     lat: 6.6433840,
     lng: 81.1091610,

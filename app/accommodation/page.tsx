@@ -24,7 +24,7 @@ const room = {
     'Handcrafted furniture',
     'Mosquito netting',
   ],
-  price: "Happy Money",
+  price: "Happy Money Meditation",
   features: [
     {
       title: 'Authentic Architecture',
@@ -194,48 +194,83 @@ export default function AccommodationPage() {
                 </AnimatedSection>
               </div>
 
-              {/* Booking Card */}
+              {/* Booking Cards */}
               <div className="lg:col-span-1">
                 <AnimatedSection animation="fadeInUp" delay={0.2}>
-                  <div className="bg-white rounded-2xl p-8 shadow-xl sticky top-24">
-                    <div className="text-center mb-6">
-                      <div className="text-5xl font-bold text-clay-700 mb-2">
+                  {/* Happy Money Meditation Card - Smaller */}
+                  <div className="bg-white rounded-2xl p-6 shadow-xl mb-6">
+                    <div className="text-center mb-4">
+                      <div className="text-3xl font-bold text-clay-700 mb-2">
                         {room.price}
                       </div>
-                      
                     </div>
-
-                    <div className="border-t border-sand-200 pt-6 mb-6">
-                      <h4 className="font-semibold text-earth-900 mb-3">
-                        What's Included:
-                      </h4>
-                      <ul className="space-y-2 text-sm text-earth-700">
-                        <li className="flex items-start gap-2">
-                          <span className="text-leaf-600 mt-1">✓</span>
-                          <span>Traditional Sri Lankan breakfast</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-leaf-600 mt-1">✓</span>
-                          <span>Village walking tour</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-leaf-600 mt-1">✓</span>
-                          <span>Access to all common areas</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-leaf-600 mt-1">✓</span>
-                          <span>Cultural activities</span>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <Button size="lg" className="w-full mb-4" href="/contact">
+                    <Button size="md" className="w-full" href="/contact">
                       Book Now
                     </Button>
+                  </div>
 
-                    <p className="text-xs text-center text-earth-500">
-                      Free cancellation up to 48 hours before check-in
-                    </p>
+                  {/* Package Cards */}
+                  <div className="space-y-4">
+                    {/* Day Package Card */}
+                    <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-clay-200">
+                      <h3 className="font-display text-xl font-bold text-earth-900 mb-2">
+                        Day Package (24h)
+                      </h3>
+                      <div className="text-2xl font-bold text-clay-600 mb-3">
+                        LKR 7,500
+                      </div>
+                      <ul className="space-y-2 text-sm text-earth-700 mb-4">
+                        <li className="flex items-start gap-2">
+                          <span className="text-leaf-600 mt-1">✓</span>
+                          <span>Set menu (breakfast)</span>
+                        </li>
+                      </ul>
+                      <Button size="md" className="w-full" href="/contact">
+                        Book Day Package
+                      </Button>
+                    </div>
+
+                    {/* 3-Day Package Card */}
+                    <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-leaf-200">
+                      <h3 className="font-display text-xl font-bold text-earth-900 mb-2">
+                        3 Days Package
+                      </h3>
+                      <div className="text-2xl font-bold text-leaf-600 mb-3">
+                        LKR 20,000
+                      </div>
+                      <ul className="space-y-2 text-sm text-earth-700 mb-4">
+                        <li className="flex items-start gap-2">
+                          <span className="text-leaf-600 mt-1">✓</span>
+                          <span>Van, car, tuktuk, bike, cycle with driver</span>
+                        </li>
+                      </ul>
+                      <Button size="md" variant="secondary" className="w-full" href="/contact">
+                        Book 3 Days
+                      </Button>
+                    </div>
+
+                    {/* Premium 3-Day Package Card */}
+                    <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-earth-400">
+                      <h3 className="font-display text-xl font-bold text-earth-900 mb-2">
+                        Premium 3 Days Package
+                      </h3>
+                      <div className="text-2xl font-bold text-earth-700 mb-3">
+                        LKR 45,000
+                      </div>
+                      <ul className="space-y-2 text-sm text-earth-700 mb-4">
+                        <li className="flex items-start gap-2">
+                          <span className="text-leaf-600 mt-1">✓</span>
+                          <span>1 day special king food table (night)</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-leaf-600 mt-1">✓</span>
+                          <span>Van, car, tuktuk, bike, cycle with driver</span>
+                        </li>
+                      </ul>
+                      <Button size="md" variant="primary" className="w-full" href="/contact">
+                        Book Premium Package
+                      </Button>
+                    </div>
                   </div>
                 </AnimatedSection>
               </div>
