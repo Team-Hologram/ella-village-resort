@@ -71,9 +71,6 @@ export default function ExperiencesPage() {
                     <p className="text-earth-600 leading-relaxed mb-4">
                       {activity.description}
                     </p>
-                    <Button variant="expr" size="sm">
-                      Learn More
-                    </Button>
                   </div>
                 </Card>
               </AnimatedSection>

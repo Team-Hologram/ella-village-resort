@@ -49,11 +49,11 @@ export const ACTIVITIES = [
   },
   {
     id: 5,
-    title: 'Lake Fishing',
+    title: 'Lake Safari',
     description: 'Try traditional fishing methods in serene waters',
     icon: '🎣',
     duration: '3 hours',
-    image: '/images/activities/fishing.jpg',
+    image: '/images/activities/lakesafari.jpg',
   },
   {
     id: 6,
@@ -69,7 +69,7 @@ export const ACTIVITIES = [
     description: 'Discover hidden waterfalls in the lush countryside',
     icon: '💧',
     duration: '4 hours',
-    image: '/images/activities/waterfall.jpg',
+    image: '/images/activities/diyaluma.jpg',
   },
   {
     id: 8,
@@ -77,7 +77,7 @@ export const ACTIVITIES = [
     description: 'Explore ancient Buddhist temples with local guides',
     icon: '🛕',
     duration: '2 hours',
-    image: '/images/activities/temple.jpg',
+    image: '/images/activities/buduruwagala.jpg',
   },
 ];
 
