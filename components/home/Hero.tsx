@@ -33,13 +33,13 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.5 }}
         >
           {/* Decorative Element */}
-          <motion.div
+          {/* <motion.div
             className="mb-6"
             animate={{ rotate: [0, 5, -5, 0] }}
             transition={{ duration: 4, repeat: Infinity }}
           >
             <span className="text-6xl">🌾</span>
-          </motion.div>
+          </motion.div> */}
 
           {/* Main Heading */}
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
@@ -86,4 +86,5 @@ export default function Hero() {
       </div>
     </section>
   );
+
 }
