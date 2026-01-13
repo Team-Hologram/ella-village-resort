@@ -25,11 +25,11 @@ const FESTIVALS = [
     duration: 'April (Seasonal)',
   },
   {
-    id: 'dalada-perahera',
-    title: 'Dalada Perahera (Kandy)',
+    id: 'katharagama-perahera',
+    title: 'Kataragama Perahera',
     description:
-      'A grand cultural procession with dancers, drummers, and decorated elephants honoring sacred heritage.',
-    image: '/images/festivals/dalada-perahera.jpg',
+      'A sacred multi-religious procession honoring devotion, ritual fire walking, traditional drumming, and ancient spiritual traditions.',
+    image: '/images/festivals/katharagama-perahera.jpg',
     icon: '🐘',
     duration: 'July–August (Seasonal)',
   },
